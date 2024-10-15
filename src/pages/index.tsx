@@ -1,6 +1,5 @@
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 function HomePageMain() {
   return (
@@ -57,10 +56,9 @@ function HomePageMain() {
 }
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={siteConfig.title}
+      title='Home'
       description='John Valle | Frontend Developer'
       wrapperClassName='relative'
     >
