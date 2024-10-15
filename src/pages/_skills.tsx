@@ -11,7 +11,10 @@ export default function Skills() {
           <img src={require("@site/static/img/ts.png").default} width='36' />
           <img src={require("@site/static/img/js.png").default} width='36' />
 
-          <img src={require("@site/static/img/react.png").default} width='36' />
+          <img
+            src={require("@site/static/img/react.webp").default}
+            width='36'
+          />
           <img src={require("@site/static/img/rhf.png").default} width='36' />
           <img src={require("@site/static/img/rn.png").default} width='36' />
 

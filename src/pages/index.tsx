@@ -1,17 +1,16 @@
-import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-function HomepageHeader() {
+function HomePageMain() {
   return (
-    <header className='p-8 mx-auto'>
+    <main className='p-8 m-auto min-h-[calc(100dvh_-_60px)]'>
       <div className='container'>
         <div className='group/banner'>
           <div className='relative w-fit py-4'>
             <img
-              className='rounded-full w-[150px]'
-              width='190'
+              className='rounded-full w-[120px]'
+              width='120'
               src={require("@site/static/img/self.webp").default}
               alt='john valle'
             />
@@ -19,20 +18,41 @@ function HomepageHeader() {
               🇵🇭
             </span>
           </div>
-          <Heading
-            as='h1'
-            className='hero__title text-light-primary dark:text-dark-primary'
-          >
-            Kumusta! I'm John Valle!
+          <Heading as='h1' className='hero__title text-black dark:text-white'>
+            John D. Valle
+          </Heading>
+          <p>
+            Frontend Engineer
+            <br /> Based from Davao City, Philippines 🇵🇭
+          </p>
+          <div className='flex gap-2 py-2'>
+            <img src={require("@site/static/img/ts.png").default} width='24' />
+            <img src={require("@site/static/img/js.png").default} width='24' />
+            <img
+              src={require("@site/static/img/react.webp").default}
+              width='24'
+            />
+          </div>
+          <hr />
+          <Heading as='h2' className='text-black dark:text-white'>
+            Kumusta!
           </Heading>
         </div>
         <p>
-          Coding in an empty cup of coffee is a crime ☕️ <br /> So I'm now in
-          my 3rd cup of coffee while coding in Davao City, Philippines 🇵🇭
+          Sipping my 3rd cup of coffee while coding
+          <br />
+          because coding with an empty cup of coffee is a crime. ☕️
         </p>
-        <button className='button button--primary'>Get to know me</button>
+
+        <a
+          role='button'
+          href='mailto:vallejohn.personal@gmail.com'
+          className='button button--primary'
+        >
+          Work with me
+        </a>
       </div>
-    </header>
+    </main>
   );
 }
 
@@ -44,7 +64,19 @@ export default function Home(): JSX.Element {
       description='John Valle | Frontend Developer'
       wrapperClassName='relative'
     >
-      <HomepageHeader />
+      <HomePageMain />
+      <img
+        className='absolute bottom-0 right-0 block dark:hidden'
+        src={require("@site/static/img/logo-light.png").default}
+        alt='logo'
+        width='200'
+      />
+      <img
+        className='absolute bottom-0 right-0 hidden dark:block'
+        src={require("@site/static/img/logo-dark.png").default}
+        alt='logo'
+        width='200'
+      />
     </Layout>
   );
 }

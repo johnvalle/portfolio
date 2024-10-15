@@ -50,7 +50,10 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    colorMode: {
+      defaultMode: "dark",
+      respectPrefersColorScheme: true,
+    },
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "John Valle",
@@ -59,6 +62,15 @@ const config: Config = {
         // { to: "/experiences", label: "Experiences", position: "left" },
         // { to: "/skills", label: "Skills", position: "left" },
       ],
+      logo: {
+        alt: "Site Logo",
+        src: "/img/logo-light.png",
+        srcDark: "/img/logo-dark.png",
+        target: "_self",
+        width: 48,
+        height: 48,
+        className: "custom-navbar-logo-class",
+      },
     },
     prism: {
       theme: prismThemes.vsLight,
