@@ -76,7 +76,7 @@ const config: Config = {
       defaultMode: "dark",
       respectPrefersColorScheme: true,
     },
-    image: "img/logo-dark.png",
+    image: "img/logo-light.png",
     navbar: {
       title: "John Valle",
       items: [
