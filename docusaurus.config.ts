@@ -82,7 +82,7 @@ const config: Config = {
       items: [
         { to: "/blog", label: "Blog", position: "left" },
         { to: "/experiences", label: "Experiences", position: "left" },
-        { to: "/skills", label: "Skills", position: "left" },
+        // { to: "/skills", label: "Skills", position: "left" },
       ],
       logo: {
         alt: "Site Logo",
