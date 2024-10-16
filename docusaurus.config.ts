@@ -33,11 +33,6 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
@@ -74,17 +69,20 @@ const config: Config = {
     },
   ],
   themeConfig: {
+    metadata: [
+      { name: "keywords", content: "personal site, blog, frontend, developer" },
+    ],
     colorMode: {
       defaultMode: "dark",
       respectPrefersColorScheme: true,
     },
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/logo-dark.png",
     navbar: {
       title: "John Valle",
       items: [
         { to: "/blog", label: "Blog", position: "left" },
-        // { to: "/experiences", label: "Experiences", position: "left" },
-        // { to: "/skills", label: "Skills", position: "left" },
+        { to: "/experiences", label: "Experiences", position: "left" },
+        { to: "/skills", label: "Skills", position: "left" },
       ],
       logo: {
         alt: "Site Logo",
